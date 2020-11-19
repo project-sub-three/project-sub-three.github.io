@@ -1,0 +1,113 @@
+:global(:root){
+--test:white;
+--hover:black;
+}
+
+
+
+:global(#MainFooterbox){
+    max-width: 1000px;
+    margin: 0px auto;
+    background: #100a0a21;
+}
+
+:global(#MainFooter){
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--red);
+  padding-top: 50px;
+}
+
+:global(.flexCol){
+  display: flex;
+  flex-direction: column;
+}
+:global(.flex){
+display:flex;
+color:white;
+}
+:global(.center){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      :global(#formheader > p:nth-child(1)){
+        font-size: 3em;
+        color:white;
+      }
+      :global(#formheader > p:nth-child(2)){
+        color:white;
+        text-align: center;
+      }
+
+:global(.MainFooter){
+  display: flex;
+  width: 78rem;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+  background: #fff;
+  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;
+}
+:global(form){
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background: var(--red);
+  padding: 20px 0px;
+}
+
+:global(.formgroup){
+  padding:10px 20px;
+}
+
+:global(label){
+  display:none;
+}
+:global(input[type="text"]){
+  border: none;
+  min-height: 40px;
+  background: var(--red);
+  border-bottom: 1px solid white;
+  color:white;
+  font-size: 20px;
+}
+:global(textarea[type="text"]){
+  border: none;
+  min-height: 150px;
+  background: var(--red);
+  border-bottom: 1px solid white;
+  color:white;
+  font-size: 20px;
+}
+:global(input[value="Submit"]){
+  width:25%;
+  padding:10px;
+  border:none;
+  background:white;
+  outline: none;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+:global(::placeholder){
+  color:white;
+  font-size: 20px;
+}
+
+:global( input[type="text"]:focus),:global(textarea:focus){
+  outline: none;
+  font-size:1.3em;
+}
+
+
+
+:global(#space){
+  padding-bottom:100px;
+}

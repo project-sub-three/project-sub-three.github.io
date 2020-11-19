@@ -1,0 +1,48 @@
+:global(:root){
+--test:white;
+--hover:black;
+--red:#bf2323;
+}
+
+
+:global(#MainInfo){
+  background:black;
+  background-image: url('../images/rearwheel.jpg');
+  background-size: cover;
+}
+:global(.MainInfo::before){
+  content: ' ';
+  background:black;
+  position:absolute;
+  width:100px;
+}
+
+:global(.flex){
+display:flex;
+color:white;
+
+}
+:global(.MainInfo){
+  display: flex;
+  width: 78rem;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+
+  padding:20px;
+  background: linear-gradient(140deg, #000000 20%, #100a0aad 100%);
+}
+:global(.MainInfo > .Left){
+width:50%;
+padding: 50px 25px 50px 0px;
+display:block;
+}
+
+:global(.MainInfo > .Right){
+width:50%;
+margin-left:50px;
+}
+
+:global(.introofevent p){
+  font-size:20px;
+}
