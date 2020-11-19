@@ -11,13 +11,15 @@ constructor(props){
 convert(){
   /*                    */
   var inputobject = {};
+  var test=1;
   document.querySelectorAll('.inputdata').forEach((node,num)=>{
     inputobject[node.id] = node.value;
+    (node.value==""?test=test*0:test=test*1);
   })
   var json = JSON.stringify(inputobject);
   console.log(json);
 
-  if(Object.values(inputobject).join(",").replace(/,/g,"").length>5){
+  if(test>0){
         var settings = {
           "url": "https://zq2ov74bee.execute-api.us-east-1.amazonaws.com/test/sendMessageWithTwilio",
           "method": "POST",
