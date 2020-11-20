@@ -2,6 +2,7 @@ import React from "react";
 import  MainBreak from './MainBreak.js'
 import  MainInfo from './MainInfo.js'
 import  MainLeft from './MainLeft.js'
+import  MainGallery from './MainGallery.js'
 import  MainRight from './MainRight.js'
 
 class MainBody extends React.Component{
@@ -23,7 +24,6 @@ Setme(){
             return {time:state.time+1}
           }
       });
-    console.log('x');
   }, 1000);
 }
 
@@ -42,6 +42,7 @@ render(){
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>
+            <MainGallery/>
             <MainRight/>
         </div>
       )
@@ -58,6 +59,7 @@ render(){
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>
+            <MainGallery/>
             <MainRight/>
         </div>
       )

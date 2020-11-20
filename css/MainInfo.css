@@ -7,7 +7,7 @@
 
 :global(#MainInfo){
   background:black;
-  background-image: url('https://project-sub-three.github.io/images/rearwheel.jpg');
+  background-image: url('../images/rearwheel.jpg');
   background-size: cover;
 }
 :global(.MainInfo::before){

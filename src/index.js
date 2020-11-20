@@ -9,6 +9,7 @@ import "../css/main.css";
 import "../css/NavIcon.css";
 import "../css/MainInfo.css";
 import "../css/MainLeft.css";
+import "../css/MainGallery.css";
 import "../css/MainRight.css";
 import "../css/MainFooter.css";
 
