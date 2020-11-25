@@ -9,6 +9,27 @@ constructor(props){
   }
 }
 
+componentDidMount(){
+  setInterval(function(){
+      var num=parseInt(document.querySelector('li.active').getAttribute("data-slide-to"))+1
+      switch(num){
+        case 1:
+          document.getElementById('Gallery-timeline-before').style.width="33%";
+          break;
+        case 2:
+          document.getElementById('Gallery-timeline-before').style.width="66%";
+          break;
+        case 3:
+          document.getElementById('Gallery-timeline-before').style.width="100%";
+          break;
+        default:
+        console.log(num)
+        break;
+
+      }
+
+  },300)
+}
 
 render(){
   if (this.state.show==1){
@@ -18,7 +39,7 @@ render(){
 
           <div className="bccontainer">
             <div id="myCarousel" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
+              <ol className="carousel-indicators" >
                 <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -62,7 +83,7 @@ render(){
               </a>
             </div>
           </div>
-
+          
         </div>
       </div>
     )

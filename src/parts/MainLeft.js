@@ -12,15 +12,25 @@ render(){
     <div id="MainLeft" className="flex">
       <div className="MainLeft">
 
-          <div className="Left center">
-            <img src="../../images/heroshot.jpg"/>
+          <div className="leftbox testbox">
+            <div className="leftbox-img">
+                <img src="../../images/rra.jpg"/>
+            </div>
+            <div className="normp rratitle">
+                Road Records Association
+            </div>
           </div>
 
-          <div className="Right center introofevent">
-            <p>On 2nd November 2020 in England, Jonathan Shubert of Arctic Aircon Race Team broke the 100 mile cycing record.</p>
-            <p>Finishing with a time of 02:57:58. That’s an average speed of 33.7142mph / 54.2577kph.</p>
-            <p>Watch the challenge here</p>
-            <button className="gcnVideo bcbutton">WATCH HERE</button>
+          <div className="rightbox testbox">
+          <div className="normp flexp">
+              The RRA was established in 1888 with the responsibility of
+              certifying the claims to records made by cyclists on British highways over set distances and for
+              place to place records.
+
+              The RRA does not organise record attempts, but provides the
+              framework and high standards for timing and authentication of records.
+              All RRA records are open to amateurs and professionals, domestic, or international riders alike.
+            </div>
           </div>
 
       </div>

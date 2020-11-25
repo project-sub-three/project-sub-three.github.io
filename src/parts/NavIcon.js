@@ -37,7 +37,7 @@ if(this.state.started==0){
              id="svgbike" viewBox="0 0 1280.000000 1024.000000"
              preserveAspectRatio="xMidYMid meet" onClick={()=>{this.start()}}>
             <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
-            id="cyclist" stroke="none">
+            id="cyclist" stroke="none" fill="white">
             <path d="M8398 10230 c-281 -48 -531 -240 -643 -495 -55 -123 -70 -199 -69
             -350 1 -162 19 -246 79 -366 133 -265 360 -431 648 -475 115 -18 197 -13 323
             16 307 72 548 314 626 630 29 116 29 292 -1 405 -69 261 -249 469 -499 579
@@ -72,9 +72,10 @@ if(this.state.started==0){
             255 174 507 262 846 296 70 7 290 -4 386 -20z"/>
             </g>
             </svg>
-            <div id="a" className="rotate"><div><a href="#" class="fa fa-facebook"></a></div></div>
-            <div id="b" className="rotate"><div><a href="#" class="fa fa-twitter"></a></div></div>
-            <div id="c" className="rotate"><div><a href="#" class="fa fa-instagram"></a></div></div>
+            <div id="a" className="rotate"><div><a href="#"><i className="fa fa-facebook"></i></a></div></div>
+            <div id="b" className="rotate"><div><a href="#" className="fa fa-twitter"></a></div></div>
+            <div id="c" className="rotate"><div><a href="#" className="fa fa-instagram"></a></div></div>
+            <div id="time">2:57:58</div>
         </div>
     </div>
   )
@@ -86,7 +87,7 @@ if(this.state.started==0){
              id="svgbike" viewBox="0 0 1280.000000 1024.000000"
              preserveAspectRatio="xMidYMid meet" onClick={()=>{this.start()}}>
             <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
-            id="cyclist" stroke="none">
+            id="cyclist" stroke="none" fill="white">
             <path d="M8398 10230 c-281 -48 -531 -240 -643 -495 -55 -123 -70 -199 -69
             -350 1 -162 19 -246 79 -366 133 -265 360 -431 648 -475 115 -18 197 -13 323
             16 307 72 548 314 626 630 29 116 29 292 -1 405 -69 261 -249 469 -499 579
@@ -124,6 +125,7 @@ if(this.state.started==0){
             <div id="a" className="rotate svgbikea"><div><a href="#" class="fa fa-facebook"></a></div></div>
             <div id="b" className="rotate svgbikeb"><div><a href="#" class="fa fa-twitter"></a></div></div>
             <div id="c" className="rotate svgbikec"><div><a href="#" class="fa fa-instagram"></a></div></div>
+            <div id="time">2:57:58</div>
         </div>
     </div>
   )

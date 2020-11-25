@@ -10,7 +10,7 @@
   width: 100%;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(180deg, #0000009c, transparent);
+  background: var(--red);
 }
 :global(#iconbox){
   display: flex;
@@ -20,12 +20,12 @@
 }
 
 :global(#svgbike){
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   transform: rotateY(180deg);
-  padding: 0px 5px;
+  padding: 30px 0px;
   border-radius: 50%;
-  border: 4px solid black;
+  border: 4px solid white;
   cursor: pointer;
   transition: 0.1s;
 }
@@ -39,8 +39,15 @@
   fill: black !important;
 }
 */
+
+:global(.rotate .fa),:global(.rotate .far),:global(.rotate .fas) {
+    font-size: 1.2em;
+    position: absolute;
+    top: 25%;
+}
+
 global(#cyclist){
-  fill:white;
+  fill:white !important;
 }
 
 
@@ -57,49 +64,54 @@ global(#cyclist){
 
 :global(.rotate > div){
   position:absolute;
-  height:5px;
+  height:30px;
+}
+
+:global(#iconbox::before){
+  content: ' ';
+  width:100%;
+  height:100px;
+  background:var(--red);
+  position: absolute;
+  z-index: 0;
 }
 
 :global(#a){
 transition:1s;
-transform-origin: 100% 45%;
-transform: rotateZ(90deg);
+transform: translate(50px,-15px);
+z-index: -1;
 }
 
 :global(#b){
 transition:1s;
-transform-origin: 100% 45%;
-transform: rotateZ(90deg);
+transform: translate(50px,-15px);
+z-index: -1;
 }
 
 :global(#c){
 transition:1s;
-transform-origin: 100% 45%;
-transform: rotateZ(90deg);
+transform: translate(50px,-15px);
+z-index: -1;
 }
 
 
 :global(/*#svgbike:hover~#a*/ .svgbikea){
 transition:1s !important;
-transform-origin: 100% 45% !important;
-transform: rotateZ(360deg) !important;
+transform: translate(-50px,-15px) !important;
+z-index: 0 !important;
 }
+  :global(#svgbike~#a>div){
+  transition:1s  !important;
+  }
+
 :global(/*#svgbike:hover~#b*/ .svgbikeb){
 transition:1s  !important;
-transform-origin: 100% 45%  !important;
-transform: rotateZ(270deg)  !important;
+transform: translate(-100px,-15px) !important;
+z-index: 0 !important;
 }
-  :global(#svgbike~#b>div){
-  transition:1s  !important;
-  transform: rotateZ(-270deg)  !important;
-  }
 
 :global(/*#svgbike:hover~#c*/ .svgbikec){
 transition:1s !important;
-transform-origin: 100% 45% !important;
-transform: rotateZ(180deg) !important;
+transform: translate(-150px,-15px) !important;
+z-index: 0 !important;
 }
-  :global(#svgbike~#c>div){
-  transition:1s !important;
-  transform: rotateZ(-180deg) !important;
-  }

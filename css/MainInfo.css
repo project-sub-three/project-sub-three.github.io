@@ -6,9 +6,7 @@
 
 
 :global(#MainInfo){
-  background:black;
-  background-image: url('../images/rearwheel.jpg');
-  background-size: cover;
+  min-height: 500px;
 }
 :global(.MainInfo::before){
   content: ' ';
@@ -24,13 +22,18 @@ color:white;
 }
 :global(.MainInfo){
   display: flex;
-  width: 78rem;
+  width: 900px;
   justify-content: space-between;
   min-height: 74px;
   margin: 0px auto;
-
   padding:20px;
-  background: linear-gradient(140deg, #000000 20%, #100a0aad 100%);
+
+  background:black;
+  background-image: url('../images/rearwheel.jpg');
+  background-size: cover;
+  background-position: inherit;
+
+
 }
 :global(.MainInfo > .Left){
 width:50%;

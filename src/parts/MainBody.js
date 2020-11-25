@@ -3,7 +3,9 @@ import  MainBreak from './MainBreak.js'
 import  MainInfo from './MainInfo.js'
 import  MainLeft from './MainLeft.js'
 import  MainGallery from './MainGallery.js'
-import  MainRight from './MainRight.js'
+import  MainStory from './MainStory.js'
+import  MainText from './MainText.js'
+import  MainBars from './MainBars.js'
 
 class MainBody extends React.Component{
 
@@ -34,16 +36,13 @@ render(){
       return(
         <div id="MainBodyboxupper">
             <div id="MainBodybox" className="center">
-              <div id="time" className="timered">
-                2:57:<span id="seconds">{this.state.time}{this.Setme()}</span>
-              </div>
-                <img src="../../images/banner.jpg" />
             </div>
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>
-            <MainGallery/>
-            <MainRight/>
+            <MainStory/>
+            <MainText/>
+            <MainBars/>
         </div>
       )
   }
@@ -51,16 +50,13 @@ render(){
       return(
         <div id="MainBodyboxupper">
             <div id="MainBodybox" className="center">
-              <div id="time">
-                2:57:<span id="seconds">{this.state.time}{this.Setme()}</span>
-              </div>
-                <img src="../../images/banner.jpg" />
             </div>
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>
-            <MainGallery/>
-            <MainRight/>
+            <MainStory/>
+            <MainText/>
+            <MainBars/>
         </div>
       )
   }

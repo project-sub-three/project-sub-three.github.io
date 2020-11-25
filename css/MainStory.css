@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:global(:root){
+--test:white;
+--hover:black;
+}
+
+
+:global(::-webkit-scrollbar){
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+
+
+:global(#MainStory){
+/*  background: #100a0a21;*/
+  color:black;
+  margin:20px 0px;
+}
+
+:global(.MainStory){
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+  background: transparent;
+  color:black;
+/*  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;
+*/
+  padding:70px 0px;
+}
+
+:global(#MainStoryBorder){
+position: absolute;
+width: 5px;
+background: var(--red);
+height: 100%;
+right: -5px;
+top: 0%;
+}
+
+:global(.MainStory-left){
+  width:30%;
+  border-right:5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  position:relative;
+}
+:global(.MainStory-left>div:nth-child(2)){
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  padding: 20px 0px 0px 0px;
+}
+:global(.MainStory-left>div:nth-child(3)){
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+  :global(#author){
+    background-image: url('../images/face.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+    height: 150px;
+    width: 150px;
+  }
+
+
+:global(.MainStory-right){
+  width:70%;
+    height: 310px;
+    overflow: auto;
+    overflow-x: hidden;
+
+}
+:global(.MainStory-right > div){
+  padding:30px;
+}
+
+:global(.MainStory-test){
+}

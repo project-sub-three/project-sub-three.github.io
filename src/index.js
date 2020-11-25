@@ -10,7 +10,9 @@ import "../css/NavIcon.css";
 import "../css/MainInfo.css";
 import "../css/MainLeft.css";
 import "../css/MainGallery.css";
-import "../css/MainRight.css";
+import "../css/MainStory.css";
+import "../css/MainText.css";
+import "../css/MainBars.css";
 import "../css/MainFooter.css";
 
 import NavIcon from './parts/NavIcon.js';

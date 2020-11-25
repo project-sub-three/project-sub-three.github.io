@@ -6,7 +6,7 @@
 
 
 :global(#MainLeft){
-  background: #100a0a21;
+/*  background: #100a0a21;*/
   color:black;
 }
 
@@ -20,12 +20,11 @@ color:white;
   display: flex;
   width: 78rem;
   justify-content: space-between;
-  min-height: 74px;
+  min-height: 400px;
   margin: 0px auto;
-  background: #fff;
-  padding: 0px 20px;
-  border-left: 1px solid #00000054;
-  border-right: 1px solid #00000054;
+  background: transparent;
+  color:black;
+  position:relative;
 }
 :global(.MainLeft > .Right){
 width:50%;
@@ -36,8 +35,8 @@ display:block;
 :global(.MainLeft img){
 height:auto;
 width:100%;
-position: absolute;
-top: 50px;
+float:left;
+padding: 30px;
 }
 
 :global(.MainLeft > .Left){
@@ -45,7 +44,43 @@ width:50%;
 position: relative;
 margin-right: 75px;
 }
-
+:global(.introofevent){
+  padding:20px 0px;
+}
 :global(.introofevent p){
   font-size:20px;
+}
+:global(.normp){
+  font-size:20px;
+}
+
+
+
+:global(.testbox){
+  /* border: 1px solid black; */
+  width: 45%;
+  min-height: 400px;
+  /* margin: 0px 0px 40px 0px; */
+  position: absolute;
+  height: 400px;
+  top: -20%;
+  background: var(--red);
+  box-shadow: 5px 0px 5px #00000070, 0px 5px 5px #00000054;
+}
+:global(.rightbox){
+  right:0%;
+}
+:global(.flexp){
+  padding:30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  height:100%;
+}
+
+:global(.rratitle){
+  font-size: 3em;
+  padding: 0px 30px;
+  color:white;
 }

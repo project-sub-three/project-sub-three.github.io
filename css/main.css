@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+:global(*){
+
+  font-family: "Oxygen script=latin rev=1";
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+:global(body){
+  /*
+background: linear-gradient(145deg, #e64c4c, #c24040);
+box-shadow: 20px 20px 40px #b93d3d, -20px -20px 40px #f55151;
+background-image: url(https://img.freepik.com/free-photo/carbon-fiber-material-background-carbon-texture_73089-47.jpg?size=626&ext=jpg);
+background-size: 8px;
+*/
+background: #fff;
+}
 :global(:root){
 --test:white;
 --hover:black;
 --red:#bf2323;
+--background:#fff;
+--text:#000;
+
+}
+:global(a){
+  color:#fff;
 }
 
 :global(#Navbox){
@@ -56,10 +79,10 @@
 
 
 :global(.fa:hover){
-color:white;
-border:1px solid black;
+color:var(--red);
+border:1px solid white;
 text-decoration: none;
-background:black;
+background:white;
 }
 :global(.fa){
   border-radius: 20px;
@@ -70,15 +93,13 @@ background:black;
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.0);
-  border:1px solid black;
-  color:black;
+  border:1px solid white;
+  color:white;
   height: 30px;
 
 }
 
 :global(#box){
-
-  height:100vh;
   width:100%;
   border:1px solid var(--test);
   position:relative;
@@ -143,20 +164,22 @@ border:1px solid black;
 }
 
 :global(#MainBodybox){
-/*height:40%;*/
-background:var(--test);
-position:relative;
+height: 500px;
+background: var(--test);
+position: relative;
+background-image: url('../images/banner.jpg');
+background-size: cover;
+background-position: bottom;
 }
 
 :global(#MainBodyboxupper){
- max-width: 1000px;
  margin: 0px auto;
+ margin-top: 140px;
 }
 
 :global(#MainBodybox  img){
   height:auto;
-  max-height: 700px;
-  width:100%;
+  max-width:900px;
   z-index:0;
 }
 :global(.center){
@@ -165,27 +188,20 @@ position:relative;
   align-items: center;
 
 }
+:global(div[id^="Main"]){
+margin:0px 0px;
+/*background: var(--red);
+border-left: 1px solid #00000054;
+border-right: 1px solid #00000054;
+*/}
 
 :global(#time){
-  color: black;
-  z-index: 2;
-  position: absolute;
-  left: 0%;
-  width: 50%;
-  height: 100%;
-
-  font-size: 10em;
-  padding-left:40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-/*
-  -webkit-text-stroke: 2px black;
-  -webkit-text-fill-color: white;
-*/
-  -webkit-text-stroke: 2px black;
-  -webkit-text-fill-color: white;
-}
+  z-index: 1;
+      font-size: 5em;
+      position: absolute;
+      right: 10%;
+      -webkit-text-fill-color: white;
+    }
 
 :global(.timered){
 /*  -webkit-text-fill-color: red !important;
@@ -194,7 +210,7 @@ position:relative;
   }
 
 :global(.MainBreak){
-  background: #100a0a21;
+  background: #bf2323;
 }
 :global(#MainBreak){
   display: flex;
@@ -203,16 +219,21 @@ position:relative;
   min-height: 74px;
   margin: 0px auto;
   color:white;
-  padding: 0px 10px;
-  background: var(--red);
-  border-left: 1px solid #00000054;
+  border:none;
+/*  border-left: 1px solid #00000054;
   border-right: 1px solid #00000054;
+*/
 }
-:global(#MainBreak > div[class*="Left"]){
+
+:global(#MainBreak > div[class*="center"]){
   font-size:20px;
+  display:flex;
+  flex-direction:column;
+  padding:20px 0px;
+  width:100%;
 }
-:global(#MainBreak > div div[class*="MainBreakLeft"]){
-  font-size:15px;
+:global(#MainBreak > div[class*="center"] > p:nth-child(1)){
+  font-size:2em;
 }
 
 :global(.bcbutton){
@@ -222,4 +243,21 @@ position:relative;
   margin-top: 20px;
   padding:10px;
   border-radius:2px;
+}
+
+
+
+
+:global(.title){
+font-size:2em;
+text-align: center;
+margin-top: 20px;
+}
+:global(.subtitle){
+font-size:1.5em;
+text-align: center;
+margin-bottom: 20px;
+}
+:global(.text){
+margin:20px 0px;
 }

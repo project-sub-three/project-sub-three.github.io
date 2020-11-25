@@ -11,12 +11,10 @@ render(){
   return(
     <div className="MainBreak">
       <div id="MainBreak">
-        <div className="Left center">
-          THE 100 MILE HOUR RECORD
-        </div>
 
-        <div className="Right center">
-          <div className="MainBreakLeft">EXPLORE<p></p></div>
+        <div className="center">
+          <p>Project Sub 3</p>
+          <p>The first-ever ride to break the 3-hour barrier for 100-miles</p>
         </div>
 
       </div>

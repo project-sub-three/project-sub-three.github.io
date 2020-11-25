@@ -11,7 +11,7 @@
 :global(#MainFooterbox){
     max-width: 1000px;
     margin: 0px auto;
-    background: #100a0a21;
+    /*background: #100a0a21;*/
 }
 
 :global(#MainFooter){
@@ -20,8 +20,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--red);
+  background:var(--red);
   padding-top: 50px;
+  margin: 0px auto;
+  border:none;
 }
 
 :global(.flexCol){
@@ -30,7 +32,7 @@
 }
 :global(.flex){
 display:flex;
-color:white;
+color:black;
 }
 :global(.center){
   display: flex;
@@ -48,20 +50,20 @@ color:white;
 
 :global(.MainFooter){
   display: flex;
-  width: 78rem;
+  width: 900px;
   justify-content: space-between;
   min-height: 74px;
   margin: 0px auto;
   background: #fff;
-  border-left: 1px solid #00000054;
-  border-right: 1px solid #00000054;
+/*  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;*/
 }
 :global(form){
   display: flex;
   flex-direction: column;
   width: 100%;
 
-  background: var(--red);
+  background:transparent;
   padding: 20px 0px;
 }
 
@@ -75,7 +77,7 @@ color:white;
 :global(input[type="text"]){
   border: none;
   min-height: 40px;
-  background: var(--red);
+  background: transparent;
   border-bottom: 3px solid white;
   color:white;
   font-size: 20px;
@@ -83,7 +85,7 @@ color:white;
 :global(textarea[type="text"]){
   border: none;
   min-height: 150px;
-  background: var(--red);
+  background:transparent;
   border-bottom: 3px solid white;
   color:white;
   font-size: 20px;
@@ -182,8 +184,16 @@ font-size:20px;
     background: var(--background);
     border:3px solid var(--black);
     transition:.1s;
+    cursor: not-allowed;
 }
-
+:global(.circleboxred){
+    position:relative;
+    height: 30%;
+    width: 30%;
+    background: var(--background);
+    border:3px solid var(--black);
+    transition:.1s;
+}
 
 :global(.circlebox::before){
   content:' ';
@@ -234,6 +244,28 @@ font-size:20px;
 
 
 
+    :global(.circleboxred::before) {
+      content: ' ';
+      position: absolute;
+      height: 150%;
+      width: 5px;
+      background: #080808;
+      top: -15%;
+      left: 45%;
+      transform: rotatez(-45deg);
+      transition: .1s;
+    }
+    :global(.circleboxred::after) {
+      content: ' ';
+      position: absolute;
+      height: 150%;
+      width: 5px;
+      background: #080606;
+      top: -15%;
+      right: 45%;
+      transform: rotatez(45deg);
+      transition: .1s;
+        }
 
 
 
