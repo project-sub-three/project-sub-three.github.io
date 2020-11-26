@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 :global(*){
 
-  font-family: "Oxygen script=latin rev=1";
+/*  font-family: "Oxygen script=latin rev=1";*/
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
   text-decoration: none;
@@ -23,6 +24,50 @@ background: #fff;
 --text:#000;
 
 }
+      :global(.youtube){
+        border: 1px solid black;
+        /* height: 50px; */
+        width: auto;
+        display: flex;
+        background: black;
+        color: white;
+        padding: 10px 10px;
+        position: absolute;
+        bottom: 10%;
+        left:10%;
+      }
+      :global(.youtube > a){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      :global(.youtube:hover > a){
+        color:white;
+      }
+      :global(.fa-youtube-play){
+        position: relative !important;
+        width: auto !important;
+        font-size: 1.7em !important;
+        padding: 10px;
+        border: none !important;
+        top: 0% !important;
+        transition:0.4s;
+      }
+      :global(.youtube:hover .fa-youtube-play){
+        border:none;
+        background:black;
+        color:var(--red);
+        transition:0.4s;
+        cursor:pointer;
+      }
+      :global(.youtube > div){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
 :global(a){
   color:#fff;
 }
@@ -93,7 +138,7 @@ background:white;
   justify-content: center;
   align-items: center;
   background: rgba(0,0,0,0.0);
-  border:1px solid white;
+  border:3px solid white;
   color:white;
   height: 30px;
 
@@ -164,10 +209,10 @@ border:1px solid black;
 }
 
 :global(#MainBodybox){
-height: 500px;
+height: 600px;
 background: var(--test);
 position: relative;
-background-image: url('../images/banner.jpg');
+background-image: url('../images/banneralt_original.jpg');
 background-size: cover;
 background-position: bottom;
 }
