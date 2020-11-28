@@ -6,20 +6,36 @@ class MainFooter extends React.Component{
 constructor(props){
   super(props);
   this.state={
-    complete:0
+    complete:0,
+    message:"aaaa"
   }
   this.convert=this.convert.bind(this);
   this.emailcheck=this.emailcheck.bind(this);
 }
-emailcheck(){
-  if(document.getElementById('email').value.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)==null){
-      document.getElementById('email').value="";
-      document.getElementById('email').placeholder="Your input doesn't match a pattern we expect";
+emailcheck(val){
+  console.log(val)
+  if(val.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g)==null){
+      this.setState((state)=>{
+        return  {
+          complete:2,
+          message:"Invalid Email",
+          email:0
+        }
+      });
     }
     else{
-      document.getElementById('emailerror').innerHTML="";
+      this.setState((state)=>{
+        return  {
+          complete:0,
+          message:"Send",
+          email:1
+        }
+      });
     }
+
 }
+
+
 convert(){
   let  d=new Date();
   let date=d.getDate()+"/"+d.getMonth()+"/"+d.getUTCFullYear()+" "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
@@ -32,8 +48,8 @@ convert(){
   })
   let json = JSON.stringify(inputobject);
 
-  if(test==1 && this.state.complete!==1  ){
-        document.getElementById('emailerror').innerHTML="";
+  if(test==1 && this.state.email==1 && this.state.complete==0  ){
+
         let settings = {
           "url": "https://grj5cny95m.execute-api.us-east-1.amazonaws.com/prod/sub3-insert-record",
           "method": "POST",
@@ -50,22 +66,38 @@ convert(){
         });
 
         this.setState(()=>{
-          return {complete:1}
+          return {message:"Sent",complete:1}
         })
 
-  }/*end of if*/
-  else{
-    this.setState(()=>{
-      return {complete:2}
-    })
-      console.log("Didn't enter enough data");
+      }
+  else if(test==1 && this.state.email==0 && this.state.complete!==1 ){
+          this.setState((state)=>{
+            return  {message:"Your Email doesn't look right",complete:2}
+          });
+
+          this.change = setTimeout(() => {
+                 this.setState({complete:0})
+             }, 2000)
+
   }
+  else{
+          this.setState((state)=>{
+            return  {message:"You Missed a Field",complete:2}
+          });
 
-
+          this.change = setTimeout(() => {
+                 this.setState({message:"Sent",complete:0})
+             }, 2000)
+        }
 }
 
 
 render(){
+var sendstatus={
+  'color': 'white',
+'fontSize': '20px',
+'textAlign': 'center'
+};
 
         if(this.state.complete==1){
           return(
@@ -89,7 +121,7 @@ render(){
                   </div>
                   <div className="formgroup flexCol">
                     <label for="email">Email</label>
-                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required/>
+                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required onChange={()=>{this.emailcheck(document.getElementById('email').value)}}/>
                     <p id="emailerror" style={{'color':'white'}}></p>
                   </div>
                   <div className="formgroup flexCol">
@@ -101,8 +133,8 @@ render(){
                     <div className="" id="circle">
                       <div className="circlebox circleboxgreen">
                       </div>
-                      <p id="sendstatus">Sent</p>
                     </div>
+                    <p id="sendstatus" style={sendstatus}>{this.state.message}</p>
                   </div>
                 </form>
 
@@ -136,7 +168,7 @@ render(){
                   </div>
                   <div className="formgroup flexCol">
                     <label for="email">Email</label>
-                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required onBlur={()=>{this.emailcheck()}}/>
+                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required onChange={()=>{this.emailcheck(document.getElementById('email').value)}}/>
                     <p id="emailerror"  style={{'color':'white'}}></p>
                   </div>
                   <div className="formgroup flexCol">
@@ -148,8 +180,8 @@ render(){
                     <div className="" onClick={()=>{this.convert()}} id="circle">
                       <div className="circlebox circleboxred">
                       </div>
-                      <p id="sendstatus">Error</p>
                     </div>
+                    <p id="sendstatus" style={sendstatus}>{this.state.message}</p>
                   </div>
                 </form>
 
@@ -183,7 +215,7 @@ render(){
                   </div>
                   <div className="formgroup flexCol">
                     <label for="email">Email</label>
-                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required onBlur={()=>{this.emailcheck()}}/>
+                    <input className="inputdata" id="email" type="text" name="email" placeholder="Email" required onChange={()=>{this.emailcheck(document.getElementById('email').value)}}/>
                     <p id="emailerror"  style={{'color':'white'}}></p>
                   </div>
                   <div className="formgroup flexCol">
@@ -195,8 +227,8 @@ render(){
                     <div className="" onClick={()=>{this.convert()}} id="circle">
                       <div className="circlebox">
                       </div>
-                      <p id="sendstatus">Send</p>
                     </div>
+                    <p id="sendstatus" style={sendstatus}>Send</p>
                   </div>
                 </form>
 

@@ -26,9 +26,9 @@ render(){
             <div className="g-info">2/11/2020</div>
           </div>
           <div className="g2 g">
-            <i class="fas fa-wind"></i>
-            <div className="g-title">Wind Speed</div>
-            <div className="g-info">00 kmph</div>
+            <i class="fas fa-chart-line"></i>
+            <div className="g-title">Elevation</div>
+            <div className="g-info">652M</div>
           </div>
           <div className="g3 g">
             <i class="far fa-clock"></i>
