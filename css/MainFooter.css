@@ -11,7 +11,7 @@
 :global(#MainFooterbox){
     max-width: 1000px;
     margin: 0px auto;
-    /*background: #100a0a21;*/
+    background:var(--red);
 }
 
 :global(#MainFooter){
@@ -24,6 +24,7 @@
   padding-top: 50px;
   margin: 0px auto;
   border:none;
+  margin:0px auto;
 }
 
 :global(.flexCol){
@@ -158,6 +159,7 @@ color:black;
   border:1px solid #fbfbfb;
 */
   flex-direction: column;
+  margin:0px auto;
 }
 :global(#circle > p){
 margin-top:20px;
@@ -236,8 +238,8 @@ font-size:20px;
   height: 140%;
   width: 5px;
   background: green;
-  top: -36%;
-  right: -20%;
+  top: -42%;
+  right: -14%;
   transform: rotatez(52deg);
   transition:.1s;
     }

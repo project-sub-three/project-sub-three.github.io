@@ -76,7 +76,7 @@ top: 0%;
     height: 310px;
     overflow: auto;
     overflow-x: hidden;
-
+    cursor: all-scroll;
 }
 :global(.MainStory-right > div){
   padding:30px;
