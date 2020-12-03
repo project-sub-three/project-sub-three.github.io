@@ -98,6 +98,9 @@ var sendstatus={
 'fontSize': '20px',
 'textAlign': 'center'
 };
+var space={
+  'color':'white'
+};
 
         if(this.state.complete==1){
           return(
@@ -138,7 +141,7 @@ var sendstatus={
                   </div>
                 </form>
 
-                <div id="space">
+                <div id="space" style={space}>Follow Jonathan on Zwift Jonathan Shubert (ProjectSub3)
                 </div>
 
               </div>
@@ -185,7 +188,7 @@ var sendstatus={
                   </div>
                 </form>
 
-                <div id="space">
+                <div id="space" style={space}>Follow Jonathan on Zwift Jonathan Shubert (ProjectSub3)
                 </div>
 
               </div>
@@ -232,7 +235,7 @@ var sendstatus={
                   </div>
                 </form>
 
-                <div id="space">
+                <div id="space" style={space}>Follow Jonathan on Zwift Jonathan Shubert (ProjectSub3)
                 </div>
 
               </div>

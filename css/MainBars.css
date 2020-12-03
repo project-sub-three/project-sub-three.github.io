@@ -14,6 +14,24 @@
   color:black;
   margin:20px 0px;
 }
+:global(#MainBars a){
+/*  background: #100a0a21;*/
+  color:var(--red);
+}
+:global(#instagram){
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+}
+:global(#instagram > i){
+/*  background: #100a0a21;*/
+  color:black;
+  font-size:1.5em;
+  border:none;
+  position: relative !important;
+  padding-right:10px;
+}
+
 
 :global(.MainBars){
   display: flex;
@@ -32,16 +50,17 @@
 
 :global(.MainBars-left){
   width:30%;
-  border-left:5px solid var(--red);
+/*  border-left:5px solid var(--red);*/
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction:column;
+  position: relative;
 }
 :global(.MainBars-left>div:nth-child(2)){
   font-family: 'Poppins', sans-serif;
   font-size: 30px;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 0px 20px;
 }
 :global(.MainBars-left>div:nth-child(3)){
   font-family: 'Poppins', sans-serif;
@@ -60,7 +79,21 @@
 
 :global(.MainBars-right){
   width: 70%;
+  height: 310px;
+  overflow: auto;
+  overflow-x: hidden;
+  cursor: all-scroll;
 }
+
+:global(#MainBarsBorder){
+position: absolute;
+width: 5px;
+background: var(--red);
+height: 100%;
+left: -5px;
+top: 0%;
+}
+
 :global(.MainBars-right > div){
   padding:30px;
 }

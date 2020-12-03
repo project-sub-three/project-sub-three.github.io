@@ -9,6 +9,10 @@
 /*  background: #100a0a21;*/
   color:black;
 }
+:global(#MainLeft a){
+/*  background: #100a0a21;*/
+  color:black;
+}
 
 
 :global(.flex){
