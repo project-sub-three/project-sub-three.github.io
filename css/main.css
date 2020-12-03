@@ -214,7 +214,7 @@ background: var(--test);
 position: relative;
 background-image: url('../images/banneralt_original.jpg');
 background-size: cover;
-background-position: bottom;
+background-position: 50% 83%;
 }
 
 :global(#MainBodyboxupper){
