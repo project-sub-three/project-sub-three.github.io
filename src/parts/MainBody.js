@@ -6,6 +6,7 @@ import  MainGallery from './MainGallery.js'
 import  MainStory from './MainStory.js'
 import  MainText from './MainText.js'
 import  MainBars from './MainBars.js'
+import  ChampionSpeaker from './ChampionSpeaker.js'
 
 class MainBody extends React.Component{
 
@@ -43,6 +44,7 @@ render(){
               </a>
               </div>
             </div>
+            <ChampionSpeaker/>
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>
@@ -63,6 +65,7 @@ render(){
               </a>
               </div>
             </div>
+            <ChampionSpeaker/>
             <MainBreak/>
             <MainInfo/>
             <MainLeft/>

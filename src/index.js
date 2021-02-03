@@ -14,6 +14,7 @@ import "../css/MainStory.css";
 import "../css/MainText.css";
 import "../css/MainBars.css";
 import "../css/MainFooter.css";
+//import "../css/ChampionSpeaker.css";
 
 import NavIcon from './parts/NavIcon.js';
 import MainBody from './parts/MainBody.js';
