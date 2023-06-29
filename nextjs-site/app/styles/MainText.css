@@ -1,0 +1,213 @@
+:root{
+--test:white;
+--hover:black;
+}
+
+
+
+#MainText{
+/*  background: #100a0a21;*/
+  color:black;
+  margin:20px 0px;
+}
+
+
+.flex{
+display:flex;
+color:white;
+
+}
+.MainText{
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+  background: transparent;
+  color:black;
+/*  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;
+*/}
+.MainText > .Right{
+width:50%;
+padding: 50px 0px;
+display:block;
+}
+
+.MainText img{
+height:auto;
+width:100%;
+position: absolute;
+top: 50px;
+}
+
+.MainText > .Left{
+width:50%;
+position: relative;
+margin-left: 75px;
+}
+
+.introofevent p{
+  font-size:20px;
+}
+.readmore{
+    width:100%;
+    text-align: center;
+    padding:30px 0px;
+}
+.readmoretext{
+color:#000;
+background:transparent;
+margin: 0px auto;
+padding: 10px;
+width: 50px;
+height: 50px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+border: 1px solid #f7f7f76e;
+border-radius: 50%;
+background: linear-gradient(145deg, #e64c4c, #c24040);
+box-shadow: 2px 2px 10px #b93d3d, -2px -2px 10px #f55151;
+}
+
+
+.glyphicon{
+  color:white;
+}
+
+
+
+/*testing*/
+
+.MainTextGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.g1,.g3,.g5{
+background:#817a7a29;
+}
+  .g:hover{
+  transition:1s;
+  background:var(--red);
+  }
+  .g:hover svg{
+  color:white;
+  }
+  .g:hover .g-title{
+  color:white;
+  transition:0.3s;
+  bottom:45%;
+  }
+  .g:hover .g-info{
+  transition:.3s;
+  color:white;
+  bottom:35%;
+  }
+#MainText svg {
+  height: 3em;
+  position: absolute;
+  top:20%;
+  }
+
+.g-title{
+  font-size: 20px;
+  font-weight:600;
+  transition:0.3s;
+  position: absolute;
+  bottom:33%;
+  text-align: center;
+}
+.g-info{
+  position:absolute;
+  font-size: 20px;
+  font-weight:300;
+  transition:.3s;
+  bottom:10%;
+  color:transparent;
+
+}
+
+
+.g{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img{
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  transition:0.4s;
+}
+.img1{
+    transform: scale(1.5);
+    background-image:url('../../public/images/hank.jpg');
+    background-size: cover;
+    background-position-x: 75%;
+  }
+.img3{
+  transform: scale(1.5);
+  background-image:url('../../public/images/banneraltOriginal.png');
+  background-size: cover;
+  background-position-x: 75%;
+}
+.img5{
+  transform: scale(1.5);
+  background-image:url('../../public/images/hero2.jpg');
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.img2{
+  transform: scale(1);
+  background-image:url('../../public/images/solo.jpg');
+  background-size: cover;
+  background-position-x: 50%;
+}
+.img4{
+  transform: scale(1);
+  background-image:url('../../public/images/threecars.jpg');
+  background-size: cover;
+  background-position-x: 40%;
+}
+.img6{
+  transform: scale(1);
+  background-image:url('../../public/images/helmetoff.jpg');
+  background-size: cover;
+  background-position-x: 10%;
+}
+
+/*
+solo.jpg
+banner_original.jpg
+threecars.jpg
+*/
+
+.imgrey::before{
+  position: absolute;
+  content:' ';
+  height: 100%;
+  width: 100%;
+  background-color:#4e41429e;
+  transition:0.4s;
+}
+.img:hover{
+  transition:0.4s;
+  transform: scale(1);
+}
+.imgrey:hover::before{
+  transition:0.4s;
+  background-color:transparent;
+}
+
+
+
+

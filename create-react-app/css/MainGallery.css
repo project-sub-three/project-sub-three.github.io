@@ -1,0 +1,124 @@
+:global(:root){
+--test:white;
+--hover:black;
+}
+:global(.teststyles){
+  text-align: center;
+  width: 100%;
+}
+
+:global(#MainGallery){
+  /*background: #100a0a21;*/
+  color:black;
+}
+
+
+:global(.MainGallery){
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+  background: transparent;
+  color:white;
+  flex-direction: column;
+  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;
+}
+
+:global(.bccontainer){
+  max-height: 500px;
+  width: 100%;
+}
+:global(.carousel){
+  height: 100%;
+}
+:global(.carousel-inner){
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+:global(.carousel-inner>.active) {
+    height: 100%;
+}
+
+:global(.carousel-control:hover){
+  color:black;
+}
+:global(.item>img) {
+  width: initial !important;
+  height: 100% !important;
+}
+:global(.carousel-control.right),:global(.carousel-control.left){
+  background-image:none !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.carousel-control){
+  color:var(--red);
+}
+:global(.carousel-inner>.item>img){
+  width: 100% !important;
+}
+:global(.carousel-inner>.next.left){
+  height:500px !important;
+}
+
+/*
+:global(.Gallery-controls){
+  display:flex;
+  justify-content: center;
+}
+:global(.Gallery-controls .glyphicon){
+  color: #ffffffed;
+  font-size: 2.5em;
+  text-shadow: 2px 2px black;
+}
+:global(.Gallery-controls >div){
+  padding: 50px 50px;
+
+  margin-top: 20px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.Gallery-pause){
+border: 1px solid #f7f7f76e;
+border-radius: 50%;
+background: linear-gradient(145deg, #e64c4c, #c24040);
+box-shadow: 2px 2px 10px #b93d3d, -2px -2px 10px #f55151;
+}
+
+
+:global(.Gallery-timeline){
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 25px;
+}
+:global(#Gallery-timeline){
+height: 20px;
+width: 100%;
+border-radius: 50px;
+background: #ffffff;
+box-shadow: 4px 4px 4px #e2dbdb, -4px -4px 4px #b7a6a6;
+position:relative;
+}
+
+:global(#Gallery-timeline-before){
+content:' ';
+background: linear-gradient(145deg, #e64c4c, #c24040);
+width:33%;
+height:100%;
+border-radius: 50px;
+position:absolute;
+transition:0.2s;
+}
+:global(.carousel-indicators){
+  display:none;
+}
+*/
