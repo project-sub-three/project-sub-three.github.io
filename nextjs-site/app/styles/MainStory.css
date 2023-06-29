@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root{
+--test:white;
+--hover:black;
+--red:#bf2323;
+}
+
+
+::-webkit-scrollbar{
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+#MainStory a{
+  color:var(--red);
+}
+
+
+#MainStory{
+
+}
+
+.MainStory{
+
+}
+
+#MainStoryBorder{
+position: absolute;
+width: 5px;
+background: var(--red);
+height: 100%;
+right: -5px;
+top: 0%;
+}
+#MainStoryBorderMobile{
+position: absolute;
+width: 100%;
+background: var(--red);
+height: 5px;
+right: 0%;
+bottom: -5px;
+}
+
+.MainStory-left{
+  
+  border-right:5px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  position:relative;
+}
+.MainStory-left>div:nth-child(2){
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  padding: 20px 0px 0px 0px;
+}
+.MainStory-left>div:nth-child(3){
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+.MainStory-left>div:nth-child(4){
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color:var(--red);
+  cursor:pointer;
+
+}
+
+
+
+
+.MainStory-right{
+    height: 310px;
+    overflow: auto;
+    overflow-x: hidden;
+    cursor: all-scroll;
+}
+.MainStory-right > div{
+  padding:30px 30px 0px 30px;
+}

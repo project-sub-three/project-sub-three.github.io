@@ -1,0 +1,33 @@
+
+
+.background{
+  background:#bf2323;
+  color:white;
+  
+}
+
+.leftbox{
+  padding:20px;
+  max-width:330px;
+}
+.img{
+  height:auto;
+  width:100%;
+}
+.h1{
+  margin-top:20px;
+  font-size:3em;
+}
+
+
+.rightbox{
+  max-width:330px;
+  padding:20px;
+  line-height: 30px;
+}
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}

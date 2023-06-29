@@ -1,0 +1,309 @@
+:global(:root){
+--test:white;
+--hover:black;
+--black:white;
+--main: black;
+--border: white;
+}
+
+
+
+:global(#MainFooterbox){
+    max-width: 1000px;
+    margin: 0px auto;
+    background:var(--red);
+}
+
+:global(#MainFooter){
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background:var(--red);
+  padding-top: 50px;
+  margin: 0px auto;
+  border:none;
+  margin:0px auto;
+}
+
+:global(.flexCol){
+  display: flex;
+  flex-direction: column;
+}
+:global(.flex){
+display:flex;
+color:black;
+}
+:global(.center){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+      :global(#formheader > p:nth-child(1)){
+        font-size: 3em;
+        color:white;
+      }
+      :global(#formheader > p:nth-child(2)){
+        color:white;
+        text-align: center;
+      }
+
+:global(.MainFooter){
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  min-height: 74px;
+  margin: 0px auto;
+  background: #fff;
+/*  border-left: 1px solid #00000054;
+  border-right: 1px solid #00000054;*/
+}
+:global(form){
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background:transparent;
+  padding: 20px 0px;
+}
+
+:global(.formgroup){
+  padding:10px 20px;
+}
+
+:global(label){
+  display:none;
+}
+:global(input[type="text"]){
+  border: none;
+  min-height: 40px;
+  background: transparent;
+  border-bottom: 3px solid white;
+  color:white;
+  font-size: 20px;
+}
+:global(textarea[type="text"]){
+  border: none;
+  min-height: 150px;
+  background:transparent;
+  border-bottom: 3px solid white;
+  color:white;
+  font-size: 20px;
+}
+:global(input[value="Submit"]){
+  width:25%;
+  padding:10px;
+  border:none;
+  background:white;
+  outline: none;
+  border-radius: 2px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+:global(::placeholder){
+  color:white;
+  font-size: 20px;
+}
+
+:global( input[type="text"]:focus),:global(textarea:focus){
+  outline: none;
+  font-size:1.3em;
+}
+
+
+
+:global(#space){
+  padding-bottom:100px;
+}
+
+/*===================================================================*/
+/*===================================================================*/
+/*===================================================================*/
+/*===================================================================*/
+
+
+:global(.finish){
+  height:100px;
+  width:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow:0px 0px 10px black;
+}
+:global(.finishgroup){
+  margin: 30px auto;
+}
+
+
+
+
+
+
+:global(#circle){
+  height:100px;
+  width:100px;
+  min-height:100px;
+  min-width:100px;
+  background:transparent;
+  border-radius:50%;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+/*  box-shadow:0px 0px 10px black;
+  border:1px solid #fbfbfb;
+*/
+  flex-direction: column;
+  margin:0px auto;
+}
+:global(#circle > p){
+margin-top:20px;
+color:white;
+font-size:20px;
+}
+
+/* =========================> */
+/* =========================> */
+/* =========================> */
+
+:global(.circlebox){
+    position:relative;
+    height: 30%;
+    width: 50%;
+    background: transparent;
+    border:3px solid var(--black);
+    transition:.1s;
+}
+:global(.circleboxgreen){
+    position:relative;
+    height: 30%;
+    width: 30%;
+    background: var(--background);
+    border:3px solid var(--black);
+    transition:.1s;
+    cursor: not-allowed;
+}
+:global(.circleboxred){
+    position:relative;
+    height: 30%;
+    width: 30%;
+    background: var(--background);
+    border:3px solid var(--black);
+    transition:.1s;
+}
+
+:global(.circlebox::before){
+  content:' ';
+  position:absolute;
+  height:115%;
+  width:3px;
+  background:var(--black);
+  top:-30%;
+  left:20%;
+  transform:rotatez(-60deg);
+  transition:.1s;
+}
+
+:global(.circlebox::after){
+  content:' ';
+  position:absolute;
+  height:115%;
+  width:3px;
+  background:var(--black);
+  top:-30%;
+  right:20%;
+  transform:rotatez(60deg);
+  transition:.1s;
+}
+
+:global(.circleboxgreen::before) {
+    content: ' ';
+    position: absolute;
+    height: 60%;
+    width: 5px;
+    background: green;
+    top: 20%;
+    left: 30%;
+    transform: rotatez(-36deg);
+    transition:.1s;
+}
+:global(.circleboxgreen::after) {
+  content: ' ';
+  position: absolute;
+  height: 140%;
+  width: 5px;
+  background: green;
+  top: -42%;
+  right: -14%;
+  transform: rotatez(52deg);
+  transition:.1s;
+    }
+
+
+
+    :global(.circleboxred::before) {
+      content: ' ';
+      position: absolute;
+      height: 150%;
+      width: 5px;
+      background: #080808;
+      top: -15%;
+      left: 45%;
+      transform: rotatez(-45deg);
+      transition: .1s;
+    }
+    :global(.circleboxred::after) {
+      content: ' ';
+      position: absolute;
+      height: 150%;
+      width: 5px;
+      background: #080606;
+      top: -15%;
+      right: 45%;
+      transform: rotatez(45deg);
+      transition: .1s;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    :global(#boot),:global(.boot){
+      position:relative;
+      height:50px;
+      width:50px;
+      background:var(--border);
+      clip-path: polygon(50% 0%, 100% 0%, 50% 50%,100% 100%,50% 100%,0% 50%);
+    }
+
+    :global(.boot::after),:global(#boot::after){
+    content:' ';
+    position:absolute;
+    clip-path: polygon(50% 5%, 90% 5%, 45% 50%,90% 95%,50% 95%,5% 50%);
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    background:black;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, var(--red) 0%, var(--red) 100%);
+
+    }
+  :global(#shoot){
+    transform: rotateZ(180deg);
+  }

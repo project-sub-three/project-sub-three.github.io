@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*{
+
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+body{
+  background: #fff;
+  padding:0px;
+  margin:0px;
+}
+:root{
+--test:white;
+--hover:black;
+--red:#bf2323;
+--background:#fff;
+--text:#000;
+
+}
+      .youtube{
+        border: 1px solid black;
+        /* height: 50px; */
+        width: auto;
+        display: flex;
+        background: black;
+        color: white;
+        padding: 10px 10px;
+        position: absolute;
+        bottom: 10%;
+        left:10%;
+      }
+      .youtube > a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+      }
+
+      .youtube:hover > a{
+        color:white;
+      }
+      svg[data-icon="video"]{
+        position: relative !important;
+        width: auto !important;
+        padding: 10px;
+        border: none !important;
+        top: 0% !important;
+        transition:0.4s;
+        height:40px;
+        margin-right:15px;
+        color:white;
+      }
+      svg[data-icon="video"] ~ div {
+        color:white;
+      }
+      .youtube:hover svg[data-icon="video"]{
+        border:none;
+        background:black;
+        color:var(--red);
+        transition:0.4s;
+        cursor:pointer;
+      }
+      .youtube > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+a{
+  color:#fff;
+}
+
+#Navbox{
+  position:absolute;
+  z-index:2;
+  color:var(--test);
+  width:100%;
+  background: transparent;
+  background-image: linear-gradient(#00000091, transparent);
+}
+#NavboxOptions{
+  display: flex;
+  float: right;
+  padding: 20px;
+}
+.navoption{
+  padding: 0px 15px;
+  position:relative;
+}
+.navoption > p{
+  position:absolute;
+  margin-bottom:10px;
+  transition: 1s;
+  width:0%;
+  height:2px;
+  top: -5px;
+  background:var(--red);
+}
+
+.navoption:hover > p{
+  transition: 1s;
+  width:90%;
+  background:var(--red);
+}
+
+.MainBreakLeft{
+  position: relative;
+}
+.MainBreakLeft > p{
+  position:absolute;
+  margin-bottom:10px;
+  transition: 1s;
+  width:0%;
+  height:2px;
+  background:white;
+}
+.MainBreakLeft:hover > p{
+  transition: 1s;
+  width:90%;
+}
+
+
+
+.fa:hover{
+color:var(--red);
+border:1px solid white;
+text-decoration: none;
+background:white;
+}
+.fa{
+  border-radius: 20px;
+  font-size: 1.2em;
+  width: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.0);
+  border:3px solid white;
+  color:white;
+  height: 30px;
+
+}
+
+#box{
+  width:100%;
+  border:1px solid var(--test);
+  position:relative;
+}
+
+
+#Menubox{
+position:absolute;
+transition:1s;
+width:10%;
+height:100%;
+border:1px solid black;
+
+display:flex;
+justify-content: center;
+align-items: center;
+overflow:hidden;
+
+}
+.MenuboxClosed{
+  transition:1s !important;
+  width:0% !important;
+}
+.MenuboxOpen{
+  transition:1s !important;
+  width:50% !important;
+}
+
+
+
+#Menubox ul li{
+padding:20px 0px;
+list-style: none;
+position: relative;
+}
+#Menubox ul li::after{
+content: ' ';
+position: absolute;
+background: var(--test);
+transition: 1s;
+width: 10%;
+bottom: 0%;
+left: 0%;
+height: 5px;
+}
+
+
+#Menubox ul li:hover::after{
+transition: 1s;
+width: 100%;
+background: black;
+}
+
+
+
+#MenuIconbox{
+position:absolute;
+transition:1s;
+top:10px;
+right:10px;
+border:1px solid black;
+}
+
+
+#MainBodyboxupper{
+ margin: 0px auto;
+}
+
+#MainBodybox  img{
+  height:auto;
+  max-width:900px;
+  z-index:0;
+}
+.center{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.bcbutton{
+  border:1px solid var(--red);
+  background:var(--red);
+  color:white;
+  margin-top: 20px;
+  padding:10px;
+  border-radius:2px;
+}
+.textCenter{
+  text-align: center;
+}
+
+
+
+.title{
+font-size:2em;
+text-align: center;
+margin-top: 20px;
+}
+.subtitle{
+font-size:1.5em;
+text-align: center;
+margin-bottom: 20px;
+}
+.text{
+margin:20px 0px;
+}
+.maxWidth{
+  max-width: 1000px;
+}
+.marginAuto{
+  margin: auto !important;
+}
+
+.paddingBottom{
+  padding-bottom: 50px;
+}
+

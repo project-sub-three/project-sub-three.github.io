@@ -1,0 +1,27 @@
+
+.NavIcon{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background:#bf2323;
+}
+
+.svgbike{
+  height: 50px;
+  width: 50px;
+  transform: rotateY(180deg);
+}
+
+.cyclist{
+  fill:white !important;
+}
+
+.jslogo{
+  height:75px !important;
+}
+
+.jslogobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
