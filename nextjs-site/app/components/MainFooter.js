@@ -12,6 +12,8 @@ export default function MainFooter(){
         </div>
 
         <form id="contactform" action="https://formsubmit.io/send/project.sub.three@gmail.com" method="POST">
+           <input name="_redirect" type="hidden" id="name" value="https://project-sub3.com/"/>
+
           <div className="formgroup flexCol">
             <label for="firstname">First Name</label>
               <input className="inputdata" id="firstname" type="text" name="firstname" placeholder="First Name" required />
